@@ -1,0 +1,19 @@
+name: iotdellgw
+version: git
+summary: iotdellgw sends gps data
+description: |
+  gps data sender
+
+grade: devel
+confinement: devmode
+
+apps:
+  iotdellgw:
+    command: bin/iotdellgw
+
+parts:
+  iotdellgw:
+    plugin: python
+    python-version: python2
+    source: .
+
