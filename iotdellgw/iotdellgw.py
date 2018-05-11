@@ -1,9 +1,16 @@
 import serial
-import pynmea2
+import os, sys, inspect
+#import pynmea2
 import re
 from math import radians, cos, sin, asin, sqrt
-import requests
+#import requests
 import json
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'pynmea2'))
+import pynmea2
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'requests'))
+import requests
+
 
 """
 
