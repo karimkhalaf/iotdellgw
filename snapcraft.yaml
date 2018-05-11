@@ -9,7 +9,7 @@ confinement: devmode
 
 apps:
   iotdellgw:
-    command: bin/iotdellgw
+    command: iotdellgw
 
 parts:
   iotdellgw:
